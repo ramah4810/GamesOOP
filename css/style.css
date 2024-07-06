@@ -1,0 +1,137 @@
+body {
+    background-color: #272b30;
+    font-family: cursive;
+}
+
+nav {
+    border-radius: 20px;
+    margin-top: -30px !important;
+    box-shadow: 0 0 10px rgb(0 0 0 / 0.7);
+}
+
+
+header img {
+    height: 30vh;
+    object-fit: cover;
+}
+
+.navbar-brand {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+
+h1 img {
+    width: 40px;
+}
+
+
+.nav-bg-color {
+    background-color: #3a497b;
+}
+
+
+.nav-item a:hover {
+    color: #09c !important;
+    transition: color 0.5s;
+}
+
+.active {
+    color: #09c !important;
+    ;
+}
+
+.card-body span {
+    font-size: 12px;
+    background-color: #0D6EFD;
+}
+
+.card-body p {
+    color: #8b8d90;
+}
+
+.card-footer span {
+    font-size: 10.5px;
+    background-color: #32383E;
+}
+
+.card {
+    cursor: pointer;
+    filter: grayscale(0.7);
+    transition: all 0.6s;
+}
+
+.card:hover {
+    transform: scale(1.07);
+    filter: grayscale(0);
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #32383e;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #272b30;
+    border-radius: 40px;
+    box-shadow: 0 0 5px rgb(0 0 0 / 0.5) inset;
+}
+
+.game-details span{
+    background-color: rgb(13, 202, 240);
+    color: #000000;
+}
+
+.card-body p.card-text {
+    margin-top: 10px;
+    height: 65px; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    font-size: 14px;
+}
+
+.loader {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 4px solid #FFF;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    margin: auto;
+  }
+  .loader::after {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-left: 4px solid #FF3D00;
+    border-bottom: 4px solid transparent;
+    animation: rotation 0.5s linear infinite reverse;
+  }
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+
+
+.mobile-nav a{
+    font-size: 12px;
+}
+
+.mobile-nav .nav-item{
+    padding: 8px 0;
+}

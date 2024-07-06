@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="games">
+        <header>
+            <img class="w-100" src="images/wraper.png" alt="header image">
+        </header>
+
+        <nav class="navbar navbar-expand-lg nav-bg-color flex-wrap col-md-6 col-lg-9 mx-auto position-sticky z-3 top-0">
+            <div class="container">
+                <h1 class="navbar-brand mb-0 text-white">
+                    <img src="images/logo-sm.png" alt="games logo">
+                    GAME REVIEWS
+                </h1>
+                <div class="collapse small navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 menu small">
+                        <li class="nav-item">
+                            <a role="button" class="nav-link active text-uppercase text-white" aria-current="page" data-category="mmorpg">mmorpg</a>
+                        </li>
+                        <li class="nav-item">
+                            <a role="button" class="nav-link text-uppercase text-white" data-category="shooter">shooter</a>
+                        </li>
+                        <li class="nav-item">
+                            <a role="button" class="nav-link text-uppercase text-white" data-category="sailing">sailing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a role="button" class="nav-link text-uppercase text-white" data-category="permadeath">permadeath</a>
+                        </li>
+                        <li class="nav-item">
+                            <a role="button" class="nav-link text-uppercase text-white" data-category="superhero">superhero</a>
+                        </li>
+                        <li class="nav-item">
+                            <a role="button" class="nav-link text-uppercase text-white" data-category="pixel">pixel</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                 </button>
+
+                 <div class="mobile-nav w-100 d-none">
+                    <ul class="list-unstyled">
+                        <li class="nav-item">
+                            <a role="button" class="nav-link active text-uppercase text-white" aria-current="page" data-category="mmorpg">mmorpg</a>
+                        </li>
+                        <li class="nav-item">
+                            <a role="button" class="nav-link text-uppercase text-white" data-category="shooter">shooter</a>
+                        </li>
+                        <li class="nav-item">
+                            <a role="button" class="nav-link text-uppercase text-white" data-category="sailing">sailing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a role="button" class="nav-link text-uppercase text-white" data-category="permadeath">permadeath</a>
+                        </li>
+                        <li class="nav-item">
+                            <a role="button" class="nav-link text-uppercase text-white" data-category="superhero">superhero</a>
+                        </li>
+                        <li class="nav-item">
+                            <a role="button" class="nav-link text-uppercase text-white" data-category="pixel">pixel</a>
+                        </li>
+                    </ul>
+                 </div>
+            </div>
+        </nav>
+
+        <div class="games-grid">
+            <div class="container py-5">
+                <div class="row row-cols-xl-4 row-cols-lg-3 row-cols-md-2 row-cols-12 gy-4">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="game-details d-none">
+        <div class="container">
+            <header class="d-flex justify-content-between pt-4 text-white">
+                <h2>Details Game</h2>
+                <button class="btn-close btn-close-white"></button>
+            </header>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="images/thumbnail (1).jpg" alt="game's image" class="w-100">
+                </div>
+                <div class="col-md-8">
+                    <h3 class="text-white">Title: Tarisland</h3>
+                    <p class="text-white">Category: <span class="badge">MMORPG</span></p>
+                    <p class="text-white">Platform: <span class="badge">Windows</span></p>
+                    <p class="text-white">Status: <span class="badge">Live</span></p>
+                    <p class="text-white">Tarisland is a free-to-play cross-platform MMORPG developed by Level Infinite and Published by
+                        Tencent.
+                        Available on PC and mobile devices, the game allows players to easily move between both, taking
+                        the game with them when they can’t be at their desk. The game is designed to appeal to players
+                        of MMOs like World of Warcraft, offering players nine playable classes and 18 specializations.
+                        Each class features an extensive talent tree system and can be customized. Players of existing
+                        MMOs will be familiar with the standard tank, DPS, and healer lineup, necessary for the game’s
+                        classic raid and dungeon system. Explore a vast game world and solve mysteries. Pick up various
+                        trades such as gathering, mining, and crafting, and sell your items on the auction house.
+                    </p>
+                    <a class="btn btn-outline-warning text-white" href="" target="_blank">Show Game</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <span class="loader"></span>
+    
+    <script src="javascript/bootstrap.bundle.js"></script>
+    <script type="module" src="javascript/index.js"></script>
+</body>
+</html>
