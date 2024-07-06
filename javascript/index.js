@@ -1,7 +1,8 @@
 import { Game } from './games.js';
 import { GameDetails } from './details.js';
-import { ui } from './ui.js';
+import { UI } from './ui.js';
 
+const ui = new UI(); 
 
 const loader = document.querySelector('.loader');
 
@@ -20,7 +21,6 @@ const apiOptions = {
         'x-rapidapi-host': 'free-to-play-games-database.p.rapidapi.com'
     }
 };
-
 
 const fetchGames = async (category) => {
     showLoader();
@@ -47,7 +47,6 @@ for (let i = 0; i < navLinks.length; i++) {
         this.classList.add('active');
         const category = this.getAttribute('data-category');
         fetchGames(category);
-        console.log("alooo", this);
     });
 }
 
@@ -59,12 +58,11 @@ document.querySelector('.games-grid').addEventListener('click', (e) => {
     }
 });
 
-document.querySelector('.game-details').addEventListener('click', function(e) {
-    if (e.target.classList.contains('btn-close')) {
-        ui.showGamesSection();
-    }
-});
-
+// document.querySelector('.game-details').addEventListener('click', function(e) {
+//     if (e.target.classList.contains('btn-close')) {
+//         ui.showGamesSection();
+//     }
+// });
 
 fetchGames('mmorpg');
 
@@ -76,4 +74,6 @@ navToggler.addEventListener('click', function () {
     } else {
         mobileNav.classList.add("d-none");
     }
-})
+});
+
+

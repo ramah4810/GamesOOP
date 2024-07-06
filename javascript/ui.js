@@ -1,5 +1,5 @@
-export const ui = {
-    displayGames (games) {
+export class UI {
+    displayGames(games) {
         const gamesGrid = document.querySelector('.games-grid .row');
         let gamesHtml = '';
         for (let i = 0; i < games.length; i++) {
@@ -26,15 +26,15 @@ export const ui = {
             `;
         }
         gamesGrid.innerHTML = gamesHtml;
-    } ,
+    }
 
-    displayGameDetails: (gameDetails) => {
+    displayGameDetails(gameDetails) {
         const gameDetailsSection = document.querySelector('.game-details');
         gameDetailsSection.innerHTML = `
             <div class="container">
                 <header class="d-flex justify-content-between pt-4 text-white">
                     <h2>Details Game</h2>
-                    <button class="btn-close btn-close-white"></button>
+                    <button id="btnClose" class="btn-close btn-close-white"></button>
                 </header>
                 <div class="row">
                     <div class="col-md-4">
@@ -53,10 +53,14 @@ export const ui = {
         `;
         gameDetailsSection.classList.remove('d-none');
         document.querySelector('.games').classList.add('d-none');
-    },
-
-    showGamesSection: () => {
-        document.querySelector('.games').classList.remove('d-none');
-        document.querySelector('.game-details').classList.add('d-none');
+        let showGamesSection = function (){
+            document.querySelector('.games').classList.remove('d-none');
+            document.querySelector('.game-details').classList.add('d-none');
+        }
+        document.querySelector(".btn-close").addEventListener('click' ,showGamesSection);
     }
-};
+
+    
+
+    
+}
